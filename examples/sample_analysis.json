@@ -1,156 +1,161 @@
 {
-  "overall_assessment": "This script has strong bones — the Kanye/Luffy parallel works, the philosophical scaffolding (William James, Sartre, Taylor) is solid, and the voice is personable. But it meanders. The pacing drags in the middle (the Sartre section especially), and some sections repeat the same beat without advancing the idea. Tighten the transitions, cut redundancy, and this could hit hard.",
+  "overall_assessment": "This script has a strong throughline and meaningful cultural anchors (Kanye, Luffy, Sartre), but it loses momentum in the middle sections. The philosophical concepts feel dropped in rather than integrated, and the Luffy segment arrives too late to land with full impact. The core insight — that self-belief precedes achievement — is compelling, but the script needs tighter connective tissue between examples.",
   "structural_suggestions": [
     {
-      "type": "cut",
-      "section": "Kanye's Mom Dr. Donda West section",
-      "rationale": "This feels like a detour. The script is about delusion as a strategy, not Kanye's origin story. The 'giant looks at himself in the mirror' line actually undercuts the thesis — you want unapologetic confidence here, not humility. Cut this entirely or reduce to a single sentence acknowledging her influence without dwelling on it."
-    },
-    {
       "type": "reorder",
-      "section": "Sartre 'Existence Precedes Essence' section",
-      "rationale": "This is the densest, most abstract part of the script, and it comes right after multiple Kanye examples. It stalls momentum. Move it earlier — right after the William James section — so the philosophy is front-loaded and the back half can be pure momentum (psychology study → Luffy → outro). The current structure buries the conceptual payoff."
+      "section": "Sartre / bad faith discussion",
+      "rationale": "The Sartre segment feels like a detour. Either move it earlier (right after the William James quote, where it would flow more naturally from 'belief creates verification') or cut it to a single punchy paragraph. Right now it breaks the Kanye momentum without adding enough new information to justify the shift in tone."
     },
     {
       "type": "expand",
-      "section": "Shelley Taylor 'Positive Illusions' section",
-      "rationale": "This is the best evidence in the script — concrete psych research that validates the thesis. But it's rushed. Spend 30 more seconds here. Explain *why* overconfidence leads to higher social status (people follow conviction) and connect it explicitly back to Kanye and Luffy. This should be a climactic 'see, the science backs it up' moment, not a footnote."
+      "section": "Luffy introduction and connection to Kanye",
+      "rationale": "The Luffy section is strong but arrives abruptly. Add 1-2 sentences bridging from the Taylor psychology segment to Luffy — something like 'This isn't just a Western phenomenon' or 'Even in fiction, we see this principle at work.' Right now it feels like a separate essay stitched on at the end."
+    },
+    {
+      "type": "cut",
+      "section": "Donda West 'giant looks in the mirror' anecdote",
+      "rationale": "The humility beat ('the giant looks at himself in the mirror and sees nothing') undercuts the entire thesis of the video. If you want to include it, reframe it as 'even Kanye's mom knew blind confidence needs grounding' — but honestly, it dilutes the message. Consider cutting entirely."
     }
   ],
   "line_edits": [
     {
       "original": "You have to be delusional to make your dreams come true. See - When you envision your dream life, it should never be as a hypothetical or a maybe; it is an absolute - it WILL happen.",
-      "suggested": "You have to be delusional to make your dreams come true. Not 'maybe.' Not 'hopefully.' It WILL happen. Full stop.",
-      "reason": "The original restates the same idea twice ('hypothetical or a maybe' vs 'absolute - it WILL happen'). Tighten to one punchy statement. The script's voice is casual — lean into sentence fragments."
+      "suggested": "You have to be delusional to make your dreams come true. When you envision your dream life, it can't be a hypothetical. It's an absolute. It WILL happen.",
+      "reason": "Tighten the opening punch. Remove 'See -' (filler) and collapse the second sentence into shorter declaratives. More impact, same meaning."
     },
     {
       "original": "Now, to the interviewer and even us, this belief is delusional - he's too old by this time to get into the NBA, he doesn't even have the right build, basically no objective evidence that he could - but the thing is that's what's necessary.",
-      "suggested": "To everyone watching, this is delusional. He's too old. Wrong build. Zero objective evidence. But that's the point.",
-      "reason": "The clause 'but the thing is that's what's necessary' is vague. 'That's the point' is sharper and implies the thesis without stating it."
+      "suggested": "To the interviewer — and to us — this belief is delusional. He's too old, wrong build, no objective shot at making it. But that's exactly the point.",
+      "reason": "The original buries the payoff in a run-on. Break it up. 'That's exactly the point' is cleaner than 'that's what's necessary.'"
     },
     {
-      "original": "See, the belief creates its verification - meaning what we believe in our mind becomes our reality. If we BELIEVE that we can't do something, then we simply cannot. Therefore, if we want to achieve something, we cannot do so being unsure of whether or not we'll actually make it. Doubt is the seed for failure.",
-      "suggested": "The belief creates its verification. What you think becomes what you do. If you believe you can't, you won't. Doubt is the seed for failure.",
-      "reason": "This over-explains the William James quote. The audience gets it. Cut the explanatory middle sentences and jump straight to the payoff: 'Doubt is the seed for failure.'"
+      "original": "See, the belief creates its verification - meaning what we believe in our mind becomes our reality.",
+      "suggested": "The belief creates its verification. What we hold in our mind becomes our reality.",
+      "reason": "Cut 'See' (overused filler) and 'meaning' (redundant). The connection is already clear from the William James quote."
     },
     {
-      "original": "So, really believing in yourself also means believing in everyone around you.",
-      "suggested": "Cut this line entirely.",
-      "reason": "This introduces a new idea (belief as collective, not individual) that the script doesn't develop. It muddles the thesis. The Luffy section is about *his* infectious confidence, not mutual belief."
+      "original": "In fact, this shows Jean Paul Sartre's philosophy on bad faith in full effect.",
+      "suggested": "This is Sartre's concept of bad faith in action.",
+      "reason": "'In fact' and 'in full effect' are both filler. Sharper transition."
+    },
+    {
+      "original": "So, is there any science to back up how Kanye's self-confidence helps him achieve his goals?",
+      "suggested": "Is there science behind this? Yes.",
+      "reason": "The question is rhetorical and overwritten. Make it snappier — you're about to answer it anyway."
     }
   ],
   "broll_opportunities": [
     {
       "timestamp_estimate": "0:00-0:15",
-      "script_excerpt": "montage of clips of some of Kanye's famous quotes",
-      "suggested_visual": "Stock — archival Kanye interview clips (Charlie Rose, Sway, Zane Lowe, concert rants). Cut rapid-fire: 'I am a god,' 'I'm the nucleus,' 'I will be the leader of a company,' etc.",
+      "script_excerpt": "Kanye montage of famous quotes",
+      "suggested_visual": "Stock footage compilation: Kanye 'I am a god' VMA speech, 'George Bush doesn't care about Black people' moment, 'I'ma let you finish' Taylor Swift interruption, presidential run announcement. High-energy rapid cuts.",
       "priority": "high",
       "tool_recommendation": "stock",
-      "rationale": "This is the thesis statement visually. The montage needs to establish Kanye's delusion as *evidence*, not just braggadocio. Use real clips to ground the argument."
+      "rationale": "These are iconic real cultural moments. AI cannot replicate Kanye's actual face, voice, or the context of these events. Stock is the only viable option."
     },
     {
-      "timestamp_estimate": "1:30-1:50",
-      "script_excerpt": "Kanye never needed proof of anything to believe he could do it. He's repeatedly told by the interviewer no, you wouldn't, as soon as he tells him he would make it to the NBA if he decided to go for it today.",
-      "suggested_visual": "Stock — Charlie Rose interview clip (full exchange). Let the dialogue play under the voiceover, then cut to Kanye's face when he says 'No.' Hold on that.",
-      "priority": "high",
-      "tool_recommendation": "stock",
-      "rationale": "This is the central example of the thesis. The audience needs to *see* the interviewer's skepticism and Kanye's unflinching response. The visual sells the absurdity-as-conviction."
-    },
-    {
-      "timestamp_estimate": "3:00-3:20",
-      "script_excerpt": "Philosopher William James, in an essay titled 'The Will to Believe,' touches on this very subject...",
-      "suggested_visual": "Self-shot — text-on-screen treatment. Show the William James quote in a clean typeface over a simple background (paper texture, muted color). Highlight 'The belief creates its verification' as it's spoken.",
+      "timestamp_estimate": "0:45-1:00",
+      "script_excerpt": "When your dream is so big that it SCARES the people around you",
+      "suggested_visual": "Text-on-screen treatment: 'SCARES' isolated and emphasized, perhaps with a subtle glitch or pulse effect. Background: abstract negative space or dark gradient.",
       "priority": "medium",
+      "tool_recommendation": "nano_banana",
+      "rationale": "This is a conceptual beat that needs typographic emphasis. A static image with strong text design will land better than trying to force a visual metaphor."
+    },
+    {
+      "timestamp_estimate": "1:15-1:30",
+      "script_excerpt": "William James quote: 'The belief creates its verification. The thought becomes literally father to the fact.'",
+      "suggested_visual": "Archival photo of William James (late 1800s portrait) with the quote overlaid in serif typography. Fade in quote in segments as voiceover reads it.",
+      "priority": "high",
+      "tool_recommendation": "nano_banana",
+      "rationale": "William James is a historical figure — stock photos exist but are likely generic. nano_banana gives you control over the composition and lets you integrate the quote cleanly into the frame."
+    },
+    {
+      "timestamp_estimate": "2:00-2:15",
+      "script_excerpt": "Kanye's Mom Dr. Donda West singing along with him, telling him which raps she liked",
+      "suggested_visual": "Stock footage: Kanye and Donda West archival home video or interview footage where they interact. If unavailable, photos of Donda with overlaid audio of Kanye talking about her.",
+      "priority": "high",
+      "tool_recommendation": "stock",
+      "rationale": "This requires real likenesses of both Kanye and Donda. AI generation cannot replicate them convincingly, and the emotional weight depends on seeing the real relationship."
+    },
+    {
+      "timestamp_estimate": "2:45-3:00",
+      "script_excerpt": "Oct 23, 2002, Kanye's car accident, jaw shattered in three places",
+      "suggested_visual": "Stock: news footage or photos from 2002 accident coverage, or close-up of Kanye with jaw wired shut from that period. Follow with album art or studio footage from 'Through the Wire' recording sessions.",
+      "priority": "high",
+      "tool_recommendation": "stock",
+      "rationale": "Real historical event. AI cannot generate convincing period-accurate news footage or Kanye's actual post-accident appearance."
+    },
+    {
+      "timestamp_estimate": "3:30-3:45",
+      "script_excerpt": "Kanye's first fashion show — 'Cherish this moment that no one came cuz soon enough everyone will want to be in here'",
+      "suggested_visual": "Stock footage of early Kanye fashion shows (2009-2011 era) — empty seats, sparse crowds, awkward runway moments. Contrast with later sold-out Yeezy presentations.",
+      "priority": "medium",
+      "tool_recommendation": "stock",
+      "rationale": "Real fashion industry events. The contrast between early failure and later success is the visual argument here — stock is the only way to show it."
+    },
+    {
+      "timestamp_estimate": "4:15-4:30",
+      "script_excerpt": "Jean-Paul Sartre — 'Existence precedes essence'",
+      "suggested_visual": "Archival photo of Sartre (smoking, cafe setting if possible) with text overlay: 'Existence precedes essence' in existentialist-style typography (stark, bold, perhaps slightly distressed).",
+      "priority": "medium",
+      "tool_recommendation": "nano_banana",
+      "rationale": "Sartre is a historical figure, but the key here is marrying his image with the core concept. nano_banana lets you control the composition and integrate the text cleanly rather than relying on generic stock photos."
+    },
+    {
+      "timestamp_estimate": "5:00-5:15",
+      "script_excerpt": "Shelley Taylor's research on positive illusions — mentally healthy people see themselves better than they are",
+      "suggested_visual": "Text-on-screen infographic: 'Positive Illusions' as title, then bullet points summarizing findings (overconfidence = better outcomes, realism = depression, confidence = higher social status). Clean, diagram-like layout.",
+      "priority": "high",
+      "tool_recommendation": "nano_banana",
+      "rationale": "This is dense psychological research that benefits from visual organization. Text-on-screen makes the findings digestible. Trying to visualize 'positive illusions' abstractly will look generic."
+    },
+    {
+      "timestamp_estimate": "6:00-6:15",
+      "script_excerpt": "Luffy: 'I AM going to be king of the pirates'",
+      "suggested_visual": "Stock anime clips: Luffy declaring his dream in episode 1, repeated declarations throughout the series, crew members affirming his goal. Fast-paced montage.",
+      "priority": "high",
+      "tool_recommendation": "stock",
+      "rationale": "These are specific copyrighted One Piece scenes. Stock (licensed anime clips) is the only legal and visually accurate option."
+    },
+    {
+      "timestamp_estimate": "7:00-7:15",
+      "script_excerpt": "Being called delusional means your dream is too big for someone else's imagination",
+      "suggested_visual": "Self-shot — tariq direct to camera, or tariq walking/moving through space while voiceover plays. This is the thesis closing — make it personal.",
+      "priority": "high",
       "tool_recommendation": "self-shot",
-      "rationale": "Abstract philosophy benefits from visual emphasis. Text-on-screen makes the quote memorable and gives the audience a moment to parse the dense language. No stock imagery of 'old books' or 'thinking man' — just the words."
-    },
-    {
-      "timestamp_estimate": "4:00-4:30",
-      "script_excerpt": "On Oct 23, 2002, just after signing his deal with Roc-A-Fella Records, Kanye's life flashed before his eyes. He got in an accident, leaving his jaw shattered in three places.",
-      "suggested_visual": "Stock — archival footage of Kanye post-accident (hospital photos, news coverage if available) + audio from 'Through the Wire' (the wired-jaw vocal effect). If no archival exists, use album art + audio.",
-      "priority": "high",
-      "tool_recommendation": "stock",
-      "rationale": "This is a dramatic turning point. The audience needs to *hear* the wired jaw to understand the stakes. The visual should be documentary-style — let the real material do the work."
-    },
-    {
-      "timestamp_estimate": "5:30-6:00",
-      "script_excerpt": "In one of his first shows, he asked his assistant how many editors showed up to see the collection — when he was shyly told none — he said, 'Cherish this moment that no one came cuz soon enough everyone will want to be in here.'",
-      "suggested_visual": "Stock — footage of Kanye's early fashion shows (if available) or photos of empty runway setups transitioning to packed Yeezy shows. Contrast the before/after visually.",
-      "priority": "medium",
-      "tool_recommendation": "stock",
-      "rationale": "The quote is vivid, but the visual can make the contrast visceral. Show the empty room, then cut to the cultural phenomenon. This is proof-of-concept for the thesis."
-    },
-    {
-      "timestamp_estimate": "6:30-7:00",
-      "script_excerpt": "Jean-Paul Sartre was a French philosopher, playwright, and novelist born in 1905. He's considered the father of existentialism and was one of the most influential thinkers of the 20th century.",
-      "suggested_visual": "Stock — archival black-and-white photo of Sartre (smoking, at a café, mid-20th century Paris). Hold the image as context, then transition to text: 'Existence Precedes Essence' as the key phrase.",
-      "priority": "low",
-      "tool_recommendation": "stock",
-      "rationale": "Establish Sartre visually so the audience knows who's being quoted. The archival photo grounds the philosophy in history. Text treatment for the key phrase makes it stick."
-    },
-    {
-      "timestamp_estimate": "8:00-8:20",
-      "script_excerpt": "In a paper by Shelley Taylor titled 'Positive Illusions.' Shelley finds that mentally healthy and high-functioning individuals consistently see themselves better than they actually are.",
-      "suggested_visual": "Self-shot — text-on-screen: 'Positive Illusions — Shelley E. Taylor, 1989' with a brief pull quote: 'Mentally healthy people see themselves better than they are.' Clean, academic treatment.",
-      "priority": "medium",
-      "tool_recommendation": "self-shot",
-      "rationale": "This is the big psych evidence drop. Text makes it authoritative and gives the audience a citation to remember. No stock footage of 'brain scans' or 'happy people' — just the research."
-    },
-    {
-      "timestamp_estimate": "9:00-9:30",
-      "script_excerpt": "If there's someone who has no shortage of confidence and self-esteem, it's One Piece's Luffy. See Luffy's unwavering self-belief that he WILL be king of the pirates is infectious.",
-      "suggested_visual": "Stock — anime clips of Luffy declaring 'I'm gonna be King of the Pirates!' across multiple episodes/arcs (early Luffy, post-timeskip, Wano, etc.). Show the repetition as a visual motif.",
-      "priority": "high",
-      "tool_recommendation": "stock",
-      "rationale": "Luffy's declaration is his defining trait. The audience needs to *see* the consistency across hundreds of episodes. The repetition itself is the argument — he never wavers."
-    },
-    {
-      "timestamp_estimate": "9:45-10:00",
-      "script_excerpt": "All of Luffy's crew says this same thing with conviction; they KNOW their captain is going to be king of the pirates, and that's what makes Luffy's character so interesting.",
-      "suggested_visual": "Stock — montage of Straw Hat crew members (Zoro, Nami, Sanji, etc.) affirming Luffy's dream in their own words. Cut between crew members rapid-fire.",
-      "priority": "medium",
-      "tool_recommendation": "stock",
-      "rationale": "This visualizes the 'infectious confidence' argument. The crew's conviction is proof that Luffy's delusion spreads. The montage should feel like a chorus of belief."
-    },
-    {
-      "timestamp_estimate": "10:30-11:00",
-      "script_excerpt": "Kanye freestyle to two words into outro",
-      "suggested_visual": "Stock — footage of Kanye performing 'Two Words' (live performance or freestyle session). Let the music play as the outro begins. Fade to black or cut to a final Kanye/Luffy image as the voiceover concludes.",
-      "priority": "high",
-      "tool_recommendation": "stock",
-      "rationale": "The freestyle is the emotional climax. The audience needs to *feel* the energy. Use performance footage to let Kanye's conviction close the argument non-verbally before the final voiceover."
+      "rationale": "The outro is where you re-enter the frame as the creator. A talking head or environmental self-shot grounds the essay back in your perspective after so much cultural analysis."
     }
   ],
   "music_tone_per_section": [
     {
-      "section": "Intro to William James (0:00-3:30)",
-      "tone": "Confident, brash, slightly abrasive — mirroring Kanye's energy. Think chopped soul samples, distorted 808s, sparse but aggressive.",
-      "tempo": "Mid-tempo (85-95 BPM). Swagger, not frantic.",
-      "rationale": "The opening needs to match Kanye's personality: loud, unapologetic, impossible to ignore. The music should make the audience feel like they're being challenged."
+      "section": "Kanye montage through Charlie Rose interview (0:00-1:30)",
+      "tone": "Bold, brash, slightly ominous. Hip-hop influenced, heavy low end.",
+      "tempo": "90-100 BPM, with syncopated hits",
+      "rationale": "Match Kanye's energy and ego. The music should feel like a flex — confident to the point of discomfort. Think Yeezus-era production aesthetic."
     },
     {
-      "section": "Car accident to fashion industry (3:30-6:00)",
-      "tone": "Reflective but defiant. Strings or piano with a minor key undertone, but keep the percussion driving forward.",
-      "tempo": "Slower (70-80 BPM), but with momentum. Not sad — determined.",
-      "rationale": "This section is about resilience. The music should feel introspective without losing forward motion. The shift in tone signals 'this is serious' without undercutting the optimism."
+      "section": "William James / Donda West / car accident (1:30-3:30)",
+      "tone": "Introspective, slightly melancholic. Warm pads, sparse piano or strings.",
+      "tempo": "70-80 BPM, slow build",
+      "rationale": "Shift to vulnerability. This section is about belief, loss, and recovery. The music should breathe and give space for emotional weight."
     },
     {
-      "section": "Sartre to Shelley Taylor (6:00-8:30)",
-      "tone": "Cerebral, spacious. Minimal synths, ambient textures. Not 'epic' — contemplative. Let the philosophy breathe.",
-      "tempo": "Slow (60-70 BPM). The tempo drop signals 'think about this.'",
-      "rationale": "The philosophy section is the densest part of the script. The music needs to get out of the way and create space for the ideas. Too much energy here will distract."
+      "section": "Fashion industry rejection through Sartre (3:30-5:00)",
+      "tone": "Tense but determined. Minor key, pulsing synth bass, rising tension.",
+      "tempo": "95-105 BPM, steady drive",
+      "rationale": "This is the 'struggle and breakthrough' section. The music should feel like forward motion against resistance — not triumphant yet, but relentless."
     },
     {
-      "section": "Luffy section (8:30-10:00)",
-      "tone": "Adventurous, buoyant, almost childlike. Bright keys, playful percussion. One Piece energy — optimistic to the point of absurdity.",
-      "tempo": "Up-tempo (100-110 BPM). This should feel like a shift in gear — lighter, more fun.",
-      "rationale": "Luffy is the emotional counterweight to Kanye. The music should feel like the thesis is now *fun* instead of combative. The tone shift keeps the video from feeling monotonous."
+      "section": "Shelley Taylor psychology through Luffy (5:00-6:30)",
+      "tone": "Bright, energetic, adventurous. Major key, uplifting melody, buoyant rhythm.",
+      "tempo": "110-120 BPM, uptempo",
+      "rationale": "The science validates the thesis, and Luffy is pure infectious optimism. The music should feel like a payoff — 'here's proof this works, now go apply it.'"
     },
     {
-      "section": "Kanye freestyle to outro (10:00-end)",
-      "tone": "Triumphant, cinematic. Let the 'Two Words' instrumental (or similar soul chop) ride out. Big, emotional, cathartic.",
-      "tempo": "Mid-tempo (90 BPM). Match the original track's energy — celebratory but grounded.",
-      "rationale": "The outro is the thesis statement wrapped in a bow. The music should feel like a victory lap. The audience should leave feeling *empowered*, not just informed. Let Kanye's voice do the heavy lifting here."
+      "section": "Outro / call to action (6:30-end)",
+      "tone": "Inspirational, cinematic, swelling. Full orchestration or layered synths, emotional peak.",
+      "tempo": "85-95 BPM, grand and deliberate",
+      "rationale": "This is the send-off. The music should feel like a mic drop — confident, affirming, and empowering. Leave the audience pumped."
     }
   ]
 }

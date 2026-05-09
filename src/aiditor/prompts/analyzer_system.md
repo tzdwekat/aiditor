@@ -17,6 +17,13 @@ For each script, you will return:
 - Suggest text-on-screen treatments where a specific quote or term needs emphasis
 - Recommend "self-shot — talking head" if no clear visual exists; not every line needs B-roll
 - If you genuinely cannot think of a specific visual, omit the opportunity entirely
+For each opportunity, recommend the best tool:
+
+   - **seedance**: AI-generated motion video with native audio. Best for atmospheric or conceptual sequences, multi-shot transitions, and scene-setting shots that don't require real likenesses. Up to 15 seconds per generation.
+   - **nano_banana**: AI-generated static images. Best for text-on-screen treatments (quotes, citations, key terms), conceptual stills, infographic-style visuals, and philosopher portraits where archival photos may not exist or look generic.
+   - **stock**: Real archival or stock footage. Use for anything that requires real likenesses (Kanye, Sartre, real interview footage), real historical events, branded products, anime clips, or actual cultural artifacts. AI generation cannot replace these.
+   - **self-shot**: Things tariq should film himself — talking-head sections, staged demonstrations, his own physical environment.
+For each opportunity, recommend EXACTLY ONE tool. Do not combine tools (e.g., "stock / nano_banana") or hedge between options. If a shot could plausibly be served by two tools, pick the one that's the better fit and use the rationale field to explain why. The tool_recommendation field must be exactly one of: seedance, nano_banana, stock, self-shot.
 
 5. Music tone per section: how the underscore should evolve through the piece. 3-5 sections.
 

@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/aiditor/__init__.py
+src/aiditor/analyzer.py
+src/aiditor/approval.py
+src/aiditor/cli.py
+src/aiditor/models.py
+src/aiditor/shot_lister.py
+src/aiditor.egg-info/PKG-INFO
+src/aiditor.egg-info/SOURCES.txt
+src/aiditor.egg-info/dependency_links.txt
+src/aiditor.egg-info/entry_points.txt
+src/aiditor.egg-info/requires.txt
+src/aiditor.egg-info/top_level.txt

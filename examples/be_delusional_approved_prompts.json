@@ -1,0 +1,51 @@
+{
+  "shots": [
+    {
+      "shot_index": 1,
+      "tool": "stock",
+      "production_prompt": "Kanye West egotistical moments montage: 'I am a god' quote, 2009 VMA Taylor Swift stage interruption, 2020 presidential campaign announcement, Yeezy fashion week runway clips. Archival footage 2009-2020.",
+      "alternates": [
+        "Kanye West controversial career highlights: VMA incident, presidential run, 'I am a god' interview clips, Paris Fashion Week Yeezy shows",
+        "YouTube clips: Kanye West 'I am a god' speech + Taylor Swift VMA interruption + presidential announcement rally 2020",
+        "Getty Images / YouTube: Kanye West iconic ego moments compilation 2009-2020"
+      ]
+    },
+    {
+      "shot_index": 2,
+      "tool": "stock",
+      "production_prompt": "Kanye West Charlie Rose interview 2005 NBA discussion — full exchange where Kanye claims he could make the NBA today, Charlie Rose responds skeptically 'no you wouldn't.' Need close-ups of both faces showing the back-and-forth.",
+      "alternates": [
+        "Charlie Rose Kanye West interview 2005 clip: NBA basketball discussion segment",
+        "YouTube: Kanye West tells Charlie Rose he could play in NBA 2005 interview",
+        "Kanye West Charlie Rose 2005 full interview — timestamp around NBA/basketball claim moment"
+      ]
+    },
+    {
+      "shot_index": 3,
+      "tool": "nano_banana",
+      "production_prompt": "Portrait of philosopher William James, 1890s Harvard professor era: bearded, intense gaze, seated in academic study with bookshelves background, sepia-toned photographic style. Overlay text in elegant serif typeface: 'The Will to Believe' (1896). Then transition to clean text card on off-white background showing James's quote in dark charcoal Garamond font, centered, generous margins, academic journal aesthetic.",
+      "alternates": [
+        "Split composition: Left side shows William James circa 1890 in Victorian academic attire, right side displays 'The Will to Believe (1896)' in classic book title typography with ornate border",
+        "William James philosopher portrait with dense library backdrop, warm amber lighting, followed by minimalist text slide: title and quote in clean sans-serif on cream background"
+      ]
+    },
+    {
+      "shot_index": 4,
+      "tool": "nano_banana",
+      "production_prompt": "Jean-Paul Sartre portrait 1960s Paris: philosopher seated at café table, cigarette in hand, black turtleneck, existentialist intellectual atmosphere, moody black-and-white photography style with slight film grain. Overlay text: 'Bad Faith (mauvaise foi)' in bold modernist typography. Then cut to definition card: 'Acting as if you're not free to choose' — clean Helvetica on matte black background, white text, simple underline accent.",
+      "alternates": [
+        "Sartre in Left Bank café setting, smoke-filled atmosphere, eyeglasses reflecting light, paired with bilingual text treatment: 'Mauvaise Foi / Bad Faith' and definition in French New Wave film title style",
+        "Close-up of Sartre's contemplative expression, Saint-Germain-des-Prés café backdrop, followed by minimalist infographic: term definition with visual icon of crossed-out chains"
+      ]
+    },
+    {
+      "shot_index": 5,
+      "tool": "nano_banana",
+      "production_prompt": "Bold typographic sequence on neutral gradient background (cream to light gray): First frame shows 'EXISTENCE PRECEDES ESSENCE' in strong geometric sans-serif, all caps, centered. Smooth dissolve transition to second frame: 'Your life is what you make it.' in slightly softer weight, sentence case, same typeface family. Subtle texture overlay — paper grain or canvas weave — adds warmth. Each phrase holds for 2-3 seconds. Minimalist, confident, manifesto aesthetic.",
+      "alternates": [
+        "Animated text reveal: 'Existence Precedes Essence' fades in over abstract brushstroke texture, then morphs into 'Your Life Is What You Make It' — modern editorial design, high contrast black text on white",
+        "Split-screen layout: philosophical term on left in academic serif, plain-language translation on right in bold sans-serif, connected by subtle arrow or equals sign, clean infographic style"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[project]
+name = "aiditor"
+version = "0.1.0"
+description = "AI-assisted video essay production pipeline"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "python-dotenv>=1.0.0",
+    "pypdf>=4.0.0",
+    "mammoth>=1.6.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+aiditor = "aiditor.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
