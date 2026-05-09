@@ -8,6 +8,9 @@ from .analyzer import analyze_script
 from .approval import write_approval_markdown, read_approved_shots
 from .shot_lister import generate_production_prompts
 from .models import ScriptAnalysis
+from .generators import dispatch_generation
+from .shot_lister import ShotList
+
 
 console = Console()
 
@@ -101,3 +104,60 @@ def approve(approval_path: Path):
                 for alt in shot.alternates:
                     console.print(f"  [dim]  • {alt}[/dim]")
         console.print()
+
+
+@cli.command()
+@click.argument("prompts_path", type=click.Path(exists=True, path_type=Path))
+@click.option(
+    "--output-dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Where to write generated assets (defaults to <script>_generated/)",
+)
+def generate(prompts_path: Path, output_dir: Path | None):
+    """Stage 3: Generate assets for all approved shots."""
+    base = prompts_path.stem.replace("_approved_prompts", "")
+    
+    if output_dir is None:
+        output_dir = prompts_path.parent / f"{base}_generated"
+    
+    prompts_data = json.loads(prompts_path.read_text())
+    shot_list = ShotList.model_validate(prompts_data)
+    
+    if not shot_list.shots:
+        console.print("[yellow]No shots to generate.[/yellow]")
+        return
+    
+    # Show what's about to happen
+    tool_counts = {}
+    for shot in shot_list.shots:
+        tool_counts[shot.tool] = tool_counts.get(shot.tool, 0) + 1
+    
+    console.print(f"[bold]Generating {len(shot_list.shots)} assets[/bold] to [cyan]{output_dir}[/cyan]")
+    for tool, count in tool_counts.items():
+        console.print(f"  • {tool}: {count}")
+    
+    if "veo" in tool_counts:
+        console.print(
+            f"\n[yellow]Note:[/yellow] {tool_counts['veo']} Veo generation(s) will run. "
+            f"Each takes 1-3 minutes and incurs API costs."
+        )
+    
+    console.print()
+    
+    with console.status("[bold]Running generators..."):
+        results = dispatch_generation(shot_list, output_dir)
+    
+    successes = [r for r in results if r.success]
+    failures = [r for r in results if not r.success]
+    
+    console.print(f"\n[green]✓ {len(successes)} succeeded[/green]")
+    for result in successes:
+        console.print(f"  Shot {result.shot_index} ({result.tool}) → [cyan]{result.output_path}[/cyan]")
+    
+    if failures:
+        console.print(f"\n[red]✗ {len(failures)} failed[/red]")
+        for result in failures:
+            console.print(f"  Shot {result.shot_index} ({result.tool}): {result.error}")
+    
+    console.print(f"\n[bold]Output directory:[/bold] {output_dir}")

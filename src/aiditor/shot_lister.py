@@ -26,7 +26,7 @@ def generate_production_prompts(
     """Stage 2: Take approved B-roll shots and generate production-ready prompts.
     
     Only fires for approved shots — this is where the lazy evaluation pays off.
-    Different tools get different prompt formats (seedance prompts are cinematic
+    Different tools get different prompt formats (veo prompts are cinematic
     descriptions, stock are search queries, etc.).
     """
     if not approved_shots:

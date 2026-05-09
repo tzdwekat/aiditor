@@ -6,7 +6,7 @@ class BrollOpportunity(BaseModel):
     script_excerpt: str = Field(description="The line or passage this B-roll would accompany")
     suggested_visual: str = Field(description="Specific visual description of what to show")
     priority: Literal["high", "medium", "low"]
-    tool_recommendation: Literal["seedance", "nano_banana", "stock", "self-shot"] = Field(
+    tool_recommendation: Literal["veo", "nano_banana", "stock", "self-shot"] = Field(
         description="Which tool best fits this shot"
     )
     rationale: str = Field(description="Why this visual adds value beyond what voiceover already conveys")

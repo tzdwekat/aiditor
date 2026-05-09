@@ -20,7 +20,7 @@
   "line_edits": [
     {
       "original": "You have to be delusional to make your dreams come true. See - When you envision your dream life, it should never be as a hypothetical or a maybe; it is an absolute - it WILL happen.",
-      "suggested": "You have to be delusional to make your dreams come true. When you envision your dream life, it can't be a hypothetical. It's an absolute. It WILL happen.",
+      "suggested": "You have to be delusional to make your dreams come `true. When you envision your dream life, it can't be a hypothetical. It's an absolute. It WILL happen.",
       "reason": "Tighten the opening punch. Remove 'See -' (filler) and collapse the second sentence into shorter declaratives. More impact, same meaning."
     },
     {

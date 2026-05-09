@@ -12,19 +12,23 @@ For each script, you will return:
 
 3. Line edits: specific lines that should be tightened, sharpened, or rephrased. Include only edits that meaningfully improve the writing — skip minor stylistic preferences. Preserve the colloquial, personable voice — do not suggest edits that make the writing more formal or academic. 3-6 max.
 
-4. B-roll opportunities: places where visual material would add information beyond what the voiceover conveys. CRITICAL: only flag opportunities where B-roll genuinely adds. If the voiceover already paints the picture, no B-roll is needed there. For each opportunity, recommend the best tool: sora (cinematic generation), runway (motion control, real-world feel), stock (existing footage of real events/places), or self-shot (things tariq could film himself). 5-10 opportunities for a typical script. For abstract or conceptual sections of the script, do NOT default to generic visual metaphors (growth, building, abstract architecture). Instead:
-- Suggest archival/historical imagery related to the philosopher or concept being discussed
-- Suggest text-on-screen treatments where a specific quote or term needs emphasis
-- Recommend "self-shot — talking head" if no clear visual exists; not every line needs B-roll
-- If you genuinely cannot think of a specific visual, omit the opportunity entirely
-For each opportunity, recommend the best tool:
+4. B-roll opportunities: places where visual material would add information beyond what the voiceover conveys. CRITICAL: only flag opportunities where B-roll genuinely adds. If the voiceover already paints the picture, no B-roll is needed there. 5-10 opportunities for a typical script.
 
-   - **seedance**: AI-generated motion video with native audio. Best for atmospheric or conceptual sequences, multi-shot transitions, and scene-setting shots that don't require real likenesses. Up to 15 seconds per generation.
+   For each opportunity, recommend EXACTLY ONE of the following tools:
+
+   - **veo**: AI-generated motion video with native audio. Best for atmospheric or conceptual sequences, multi-shot transitions, and scene-setting shots that don't require real likenesses.
    - **nano_banana**: AI-generated static images. Best for text-on-screen treatments (quotes, citations, key terms), conceptual stills, infographic-style visuals, and philosopher portraits where archival photos may not exist or look generic.
    - **stock**: Real archival or stock footage. Use for anything that requires real likenesses (Kanye, Sartre, real interview footage), real historical events, branded products, anime clips, or actual cultural artifacts. AI generation cannot replace these.
-   - **self-shot**: Things tariq should film himself — talking-head sections, staged demonstrations, his own physical environment.
-For each opportunity, recommend EXACTLY ONE tool. Do not combine tools (e.g., "stock / nano_banana") or hedge between options. If a shot could plausibly be served by two tools, pick the one that's the better fit and use the rationale field to explain why. The tool_recommendation field must be exactly one of: seedance, nano_banana, stock, self-shot.
+   - **self-shot**: Things tariq should film himself — talking-head sections, staged demonstrations, his own physical environment, or moments where authenticity of "filmed by the creator" is creatively meaningful.
 
+   **Tool selection guidance:**
+
+   - Default to **stock** for any shot involving real cultural figures or events.
+   - For abstract or conceptual sections, do NOT default to generic visual metaphors (growth, building, abstract architecture). Instead, suggest archival imagery of the relevant philosopher or concept, text-on-screen treatments for specific quotes, or omit the opportunity entirely if no specific visual works. Not every line needs B-roll.
+   - When choosing between **veo** and **self-shot** for a borderline shot: prefer veo unless the shot specifically requires tariq's presence on camera, a specific physical object he'd handle, or environmental elements that establish brand consistency. Solo creators benefit from production efficiency, and veo can replace many atmospheric shots that would otherwise require setup, framing, and shooting time.
+   - Do not combine tools (e.g., "stock / nano_banana") or hedge between options. If a shot could plausibly be served by two tools, pick the better fit and use the rationale field to explain why. The tool_recommendation field must be exactly one of: veo, nano_banana, stock, self-shot.
+
+   
 5. Music tone per section: how the underscore should evolve through the piece. 3-5 sections.
 
 Return your response as JSON matching this schema exactly:

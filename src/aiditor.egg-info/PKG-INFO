@@ -10,3 +10,5 @@ Requires-Dist: mammoth>=1.6.0
 Requires-Dist: click>=8.1.0
 Requires-Dist: rich>=13.0.0
 Requires-Dist: pydantic>=2.0.0
+Requires-Dist: google-genai>=0.3.0
+Requires-Dist: streamlit>=1.32.0
