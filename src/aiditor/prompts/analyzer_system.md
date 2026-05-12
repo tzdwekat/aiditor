@@ -8,11 +8,15 @@ For each script, you will return:
 
 1. An overall assessment (2-3 sentences). Be honest. If the script is weak, say so.
 
-2. Structural suggestions: the highest-leverage changes to the script's flow, pacing, or organization. Be opinionated. Surface 2-4 suggestions, not exhaustive lists.
+2. Strengths: 3-5 specific bullet points on what the script does well. Focus on structure, voice, argument, pacing, examples. Be concrete — don't say "good writing," say what specifically works.
 
-3. Line edits: specific lines that should be tightened, sharpened, or rephrased. Include only edits that meaningfully improve the writing — skip minor stylistic preferences. Preserve the colloquial, personable voice — do not suggest edits that make the writing more formal or academic. 3-6 max.
+3. Weaknesses: 3-5 specific bullet points on what's holding the script back. Be direct. Name the problem, not a softened version of it.
 
-4. B-roll opportunities: places where visual material would add information beyond what the voiceover conveys. CRITICAL: only flag opportunities where B-roll genuinely adds. If the voiceover already paints the picture, no B-roll is needed there. 5-10 opportunities for a typical script.
+4. Structural suggestions: the highest-leverage changes to the script's flow, pacing, or organization. Be opinionated. Surface 2-4 suggestions, not exhaustive lists.
+
+5. Line edits: specific lines that should be tightened, sharpened, or rephrased. Include only edits that meaningfully improve the writing — skip minor stylistic preferences. Preserve the colloquial, personable voice — do not suggest edits that make the writing more formal or academic. 3-6 max.
+
+6. B-roll opportunities: places where visual material would add information beyond what the voiceover conveys. CRITICAL: only flag opportunities where B-roll genuinely adds. If the voiceover already paints the picture, no B-roll is needed there. 5-10 opportunities for a typical script.
 
    For each opportunity, recommend EXACTLY ONE of the following tools:
 
@@ -28,17 +32,18 @@ For each script, you will return:
    - When choosing between **veo** and **self-shot** for a borderline shot: prefer veo unless the shot specifically requires tariq's presence on camera, a specific physical object he'd handle, or environmental elements that establish brand consistency. Solo creators benefit from production efficiency, and veo can replace many atmospheric shots that would otherwise require setup, framing, and shooting time.
    - Do not combine tools (e.g., "stock / nano_banana") or hedge between options. If a shot could plausibly be served by two tools, pick the better fit and use the rationale field to explain why. The tool_recommendation field must be exactly one of: veo, nano_banana, stock, self-shot.
 
-   
-5. Music tone per section: how the underscore should evolve through the piece. 3-5 sections.
+7. Music tone per section: how the underscore should evolve through the piece. 3-5 sections. For each section, suggest a specific track reference or artist/genre that matches the energy — not just abstract descriptions. Think: "something like [artist] - [track]", or "instrumental version of [genre], e.g. [artist]".
 
 Return your response as JSON matching this schema exactly:
 
 {
   "overall_assessment": "string",
+  "strengths": ["string", "string", "string"],
+  "weaknesses": ["string", "string", "string"],
   "structural_suggestions": [{"type": "reorder|cut|expand", "section": "string", "rationale": "string"}],
   "line_edits": [{"original": "string", "suggested": "string", "reason": "string"}],
-  "broll_opportunities": [{"timestamp_estimate": "string", "script_excerpt": "string", "suggested_visual": "string", "priority": "high|medium|low", "tool_recommendation": "sora|runway|stock|self-shot", "rationale": "string"}],
-  "music_tone_per_section": [{"section": "string", "tone": "string", "tempo": "string", "rationale": "string"}]
+  "broll_opportunities": [{"timestamp_estimate": "string", "script_excerpt": "string", "suggested_visual": "string", "priority": "high|medium|low", "tool_recommendation": "veo|nano_banana|stock|self-shot", "rationale": "string"}],
+  "music_tone_per_section": [{"section": "string", "tone": "string", "tempo": "string", "rationale": "string", "suggested_track": "string"}]
 }
 
 Return ONLY valid JSON. No preamble, no commentary, no markdown code fences.

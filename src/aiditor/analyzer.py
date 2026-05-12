@@ -9,7 +9,7 @@ load_dotenv()
 
 PROMPT_PATH = Path(__file__).parent / "prompts" / "analyzer_system.md"
 
-def analyze_script(script_text: str, model: str = "claude-sonnet-4-5-20250929") -> ScriptAnalysis:
+def analyze_script(script_text: str, model: str = "claude-sonnet-4-6") -> ScriptAnalysis:
     """Run Stage 1 analysis on a script using Claude.
     
     Returns a structured ScriptAnalysis object.
@@ -19,7 +19,7 @@ def analyze_script(script_text: str, model: str = "claude-sonnet-4-5-20250929") 
     
     response = client.messages.create(
         model=model,
-        max_tokens=4096,
+        max_tokens=8192,
         system=system_prompt,
         messages=[
             {
@@ -28,13 +28,19 @@ def analyze_script(script_text: str, model: str = "claude-sonnet-4-5-20250929") 
             }
         ]
     )
-    
+
     raw_text = response.content[0].text.strip()
-    
-    # Strip code fences if Claude added them despite instructions
+
+    # Strip code fences if present
     if raw_text.startswith("```"):
         lines = raw_text.split("\n")
         raw_text = "\n".join(lines[1:-1])
-    
+
+    # Extract the JSON object in case of any surrounding text
+    start = raw_text.find("{")
+    end = raw_text.rfind("}")
+    if start != -1 and end != -1:
+        raw_text = raw_text[start:end + 1]
+
     data = json.loads(raw_text)
     return ScriptAnalysis.model_validate(data)

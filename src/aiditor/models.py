@@ -26,9 +26,12 @@ class MusicTone(BaseModel):
     tone: str = Field(description="Mood/feel: tense, contemplative, melancholic, etc.")
     tempo: str = Field(description="Rough tempo: slow, mid, building, etc.")
     rationale: str
+    suggested_track: str = Field(description="Specific song, artist, or genre reference. E.g. 'something like Kanye - POWER', 'Hans Zimmer minimalist piano', 'lo-fi hip hop ~90 BPM'")
 
 class ScriptAnalysis(BaseModel):
     overall_assessment: str = Field(description="2-3 sentences on the script's strengths and weaknesses")
+    strengths: list[str] = Field(description="3-5 specific things the script does well")
+    weaknesses: list[str] = Field(description="3-5 specific things holding the script back")
     structural_suggestions: list[StructuralSuggestion]
     line_edits: list[LineEdit]
     broll_opportunities: list[BrollOpportunity]
